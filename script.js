@@ -22,8 +22,8 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 200; // x-positie van speler
-var spelerY = 100; // y-positie van speler
+var spelerX = 400; // x-positie van speler
+var spelerY = 200; // y-positie van speler
 
 var kogelX = 0;    // x-positie van kogel
 var kogelY = 0;    // y-positie van kogel
@@ -81,12 +81,10 @@ var tekenKogel = function(x, y) {
 var tekenSpeler = function(x, y) {
   fill("white");
   ellipse(x, y, 50, 50);
-  line(250, 200, x, 120);
-  line(150, 200, x, 120);
-  line(250, 300, x, 220);
-  line(150, 300, x, 220);
-  rect(x - 5, y + 24, 10, 120);
-  
+  rect(x - 34, y + 24, 70, 120);
+  rect(x + 40, y + 24, 30, 110);
+  rect(x - 67, y + 24, 30, 110);
+  rect(x)
 };
 
 
