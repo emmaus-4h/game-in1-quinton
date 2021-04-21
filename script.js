@@ -80,11 +80,15 @@ var tekenKogel = function(x, y) {
  */
 var tekenSpeler = function(x, y) {
   fill("white");
-  ellipse(x, y, 50, 50);
-  rect(x - 34, y + 24, 70, 120);
-  rect(x + 40, y + 24, 30, 110);
-  rect(x - 67, y + 24, 30, 110);
-  rect(x)
+  if(keyIsDown(LEFT_ARROW)) {spelerX -= 10;}
+  if(keyIsDown(RIGHT_ARROW)) {spelerX += 10;}
+  if(keyIsDown(UP_ARROW)) {spelerY -= 10;}
+  ellipse(spelerX, spelerY, 50, 50);
+  rect(spelerX - 34, spelerY + 24, 70, 120);
+  rect(spelerX + 40, spelerY + 24, 30, 110);
+  rect(spelerX - 67, spelerY + 24, 30, 110);
+  rect(spelerX - 34, spelerY + 146, 33, 110);
+  rect(spelerX + 4, spelerY + 146, 33, 110);
 };
 
 
